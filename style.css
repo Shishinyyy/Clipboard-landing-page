@@ -1,0 +1,399 @@
+:root {
+  --clr-strong-cyan: hsl(171, 66%, 44%);
+  --clr-light-blue: hsl(233, 100%, 69%);
+  --clr-dark-blue: hsl(210, 10%, 33%);
+  --clr-gray-blue: hsl(201, 11%, 66%);
+  --clr-gray-blue-op: hsl(201, 11%, 66%, 0.1);
+  --ff-body: "Bai Jamjuree", sans-serif;
+  --fs-small: 16px;
+  --fs-body: 18px;
+  --fs-small-subtitle: 24px;
+  --fs-subtitle: 28px;
+  --fw-regular: 400;
+  --fw-bold: 600;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  text-align: center;
+  background-image: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+main {
+  padding: 0 2rem;
+}
+
+.btn {
+  color: white;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 100vw;
+  overflow: hidden;
+  padding: 13px 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-ios {
+  background-color: var(--clr-strong-cyan);
+}
+
+.btn-mac {
+  background-color: var(--clr-light-blue);
+}
+
+.btn-ios:hover {
+  background-color: hsl(171, 66%, 44%, 0.75);
+}
+
+.btn-mac:hover {
+  background-color: hsl(233, 100%, 69%, 0.75);
+}
+
+/* Clipboard Sections */
+.clipboard__hero,
+.clipboard__snippets,
+.clipboard__access,
+.clipboard__workflow,
+.clipboard__brands,
+.clipboard__cta {
+  margin-bottom: 11.625rem;
+}
+
+.clipboard__hero {
+  margin-bottom: 10rem;
+}
+
+.clipboard__hero img {
+  margin: 123px auto 115px;
+}
+
+.clipboard__title {
+  color: var(--clr-dark-blue);
+  letter-spacing: -0.52px;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.clipboard__subtitle {
+  color: var(--clr-dark-blue);
+  font-size: var(--fs-subtitle);
+  letter-spacing: -0.46px;
+}
+
+.clipboard__description {
+  color: var(--clr-gray-blue);
+  font-size: var(--fs-small);
+  line-height: 26px;
+  letter-spacing: 0.12px;
+  margin-bottom: 3rem;
+}
+
+.clipboard__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.clipboard__snippets h2 {
+  margin-bottom: 1rem;
+}
+
+.clipboard__features {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.clipboard__feature-list {
+  display: grid;
+  gap: 3rem;
+}
+
+.clipboard__feature-title {
+  font-size: var(--fs-small-subtitle);
+  color: var(--clr-dark-blue);
+  letter-spacing: -0.39px;
+  margin-bottom: 0.625rem;
+}
+
+.clipboard__access {
+  margin-bottom: 8.125rem;
+}
+
+/* clipboard__subtitle */
+.clipboard__access h2 {
+  margin-bottom: 1rem;
+}
+
+.clipboard__access img {
+  display: inline-block;
+}
+
+.clipboard__workflow {
+  margin-bottom: 8.1875rem;
+}
+
+.clipboard__workflow h2 {
+  margin-bottom: 0.6875rem;
+}
+
+.clipboard__tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.clipboard__tools img {
+  display: inline-block;
+  margin-bottom: 2.625rem;
+}
+
+.clipboard__tool-title {
+  margin-bottom: 1.125rem;
+}
+
+.clipboard__tool-description {
+  color: var(--clr-gray-blue);
+  font-size: var(--fs-small);
+  letter-spacing: 0.12px;
+  line-height: 26px;
+}
+
+.clipboard__brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.5rem;
+  margin-bottom: 10.625rem;
+}
+
+.clipboard__cta {
+  margin-bottom: 10.625rem;
+}
+
+.clipboard__cta h2 {
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: var(--clr-gray-blue-op);
+  padding: 3.25rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+footer img {
+  width: 55px;
+  height: 55px;
+}
+
+.footer__nav,
+.footer__link {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.footer__link {
+  color: var(--clr-dark-blue);
+  letter-spacing: 0.14px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  cursor: pointer;
+  color: var(--clr-strong-cyan);
+}
+
+.footer__social {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.footer__social img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer__social img:hover {
+  cursor: pointer;
+  filter: invert(55%) sepia(96%) saturate(324%) hue-rotate(121deg)
+    brightness(91%) contrast(94%);
+}
+
+/* Desktop Styles */
+@media (min-width: 1440px) {
+  body {
+    background-image: url(images/bg-header-desktop.png);
+  }
+
+  main {
+    padding: 0;
+  }
+
+  img {
+    max-width: fit-content;
+  }
+
+  .clipboard__title {
+    font-size: 2.875rem;
+    letter-spacing: -0.75px;
+  }
+
+  .clipboard__subtitle {
+    font-size: 36px;
+    letter-spacing: -0.59px;
+  }
+
+  .clipboard__description {
+    margin-right: 22.1875rem;
+    margin-left: 22.1875rem;
+    font-size: var(--fs-body);
+    line-height: 30px;
+    letter-spacing: 0.14px;
+  }
+
+  .clipboard__access .clipboard__description {
+    margin-bottom: 6.875rem;
+  }
+
+  .clipboard__hero .clipboard__description {
+    font-size: 1.25rem;
+  }
+
+  .clipboard__buttons,
+  .clipboard__features,
+  .clipboard__tools,
+  .clipboard__brands,
+  footer {
+    flex-direction: row;
+  }
+
+  .btn {
+    padding: 13px 36px;
+  }
+
+  .clipboard__features {
+    align-items: center;
+    gap: 6.875rem;
+    margin-left: -3.125rem;
+    margin-right: 17.25rem;
+  }
+
+  .clipboard__feature-list {
+    text-align: left;
+  }
+
+  .clipboard__feature-description {
+    line-height: 30px;
+  }
+
+  .clipboard__tools {
+    gap: 1.875rem;
+    margin: 0 auto;
+  }
+
+  .clipboard__tool {
+    flex: 0 0 350px;
+  }
+
+  .clipboard__brands {
+    gap: 6.5rem;
+  }
+
+  footer {
+    justify-content: space-around;
+  }
+
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
+    gap: 10px;
+    text-align: left;
+  }
+
+  .footer__link {
+    width: 50%;
+  }
+
+  .footer__link:nth-child(1) {
+    /* FAQs */
+    order: 1;
+  }
+
+  .footer__link:nth-child(2) {
+    /* Contact Us */
+    order: 2;
+  }
+
+  .footer__link:nth-child(3) {
+    /* Privacy Policy */
+    order: 3;
+  }
+
+  .footer__link:nth-child(4) {
+    /* Press Kit */
+    order: 4;
+  }
+
+  .footer__link:nth-child(5) {
+    /* Install Guide */
+    order: 5;
+  }
+}
