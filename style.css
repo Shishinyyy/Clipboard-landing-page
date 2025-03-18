@@ -168,7 +168,6 @@ main {
   margin-bottom: 8.125rem;
 }
 
-/* clipboard__subtitle */
 .clipboard__access h2 {
   margin-bottom: 1rem;
 }
@@ -202,6 +201,7 @@ main {
   margin-bottom: 1.125rem;
 }
 
+.clipboard__feature-description,
 .clipboard__tool-description {
   color: var(--clr-gray-blue);
   font-size: var(--fs-small);
